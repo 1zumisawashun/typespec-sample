@@ -1,8 +1,8 @@
 import "@typespec/http";
 
 using Http;
-@service(#{ title: "Widget Service" })
-namespace DemoService;
+@service(#{ title: "Widgets" })
+namespace Widgets;
 
 model Widget {
   id: string;
@@ -35,7 +35,10 @@ interface Widgets {
   /** Create a widget */
   @post create(@body body: Widget): Widget | Error;
   /** Update a widget */
-  @patch update(@path id: string, @body body: MergePatchUpdate<Widget>): Widget | Error;
+  @patch update(
+    @path id: string,
+    @body body: MergePatchUpdate<Widget>,
+  ): Widget | Error;
   /** Delete a widget */
   @delete delete(@path id: string): void | Error;
 
