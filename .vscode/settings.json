@@ -1,0 +1,19 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "[json][[jsonc][yaml][typespec][markdown][css][astro][mdx][shellscript][dockerfile]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "git.ignoreLimitWarning": true,
+  "vitest.enable": true,
+  "vitest.commandLine": "node ./node_modules/vitest/vitest.mjs",
+  "prettier.prettierPath": "./node_modules/prettier/index.cjs",
+  "prettier.documentSelectors": ["**/*.tsp", "**/*.astro"],
+  "typespec.tsp-server.path": "${workspaceFolder}/packages/compiler"
+}
