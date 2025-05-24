@@ -27,20 +27,21 @@ export default defineConfig({
       target: "./dist/schema/openapi.Petstore.yaml",
     },
   },
-  servicePlanCsv: {
-    output: {
-      ...outputConfig,
-      target: "src/features/service-plan-csv/endpoints",
-      schemas: "src/features/service-plan-csv/models",
-      override: {
-        mutator: {
-          path: "./src/functions/custom-fetch.ts",
-          name: "customFetch",
-        },
-      },
-    },
-    input: {
-      target: "./dist/schema/openapi.ServicePlanCsv.yaml",
-    },
-  },
+  // ServicePlanCsv feature is planned but not implemented yet
+  // servicePlanCsv: {
+  //   output: {
+  //     ...outputConfig,
+  //     target: "src/features/service-plan-csv/endpoints",
+  //     schemas: "src/features/service-plan-csv/models",
+  //     override: {
+  //       mutator: {
+  //         path: "./src/functions/custom-fetch.ts",
+  //         name: "customFetch",
+  //       },
+  //     },
+  //   },
+  //   input: {
+  //     target: "./dist/schema/openapi.ServicePlanCsv.yaml",
+  //   },
+  // },
 });
