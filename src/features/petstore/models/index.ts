@@ -5,13 +5,13 @@
  * OpenAPI spec version: 1.0.0
  */
 
-export * from './cat';
-export * from './catType';
-export * from './createPetsBodyItem';
-export * from './dachshund';
-export * from './dog';
-export * from './error';
-export * from './labradoodle';
-export * from './listPetsParams';
-export * from './pet';
-export * from './pets';
+export * from "./cat";
+export * from "./catType";
+export * from "./createPetsBodyItem";
+export * from "./dachshund";
+export * from "./dog";
+export * from "./error";
+export * from "./labradoodle";
+export * from "./listPetsParams";
+export * from "./pet";
+export * from "./pets";

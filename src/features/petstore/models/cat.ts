@@ -4,7 +4,7 @@
  * Swagger Petstore
  * OpenAPI spec version: 1.0.0
  */
-import type { CatType } from './catType';
+import type { CatType } from "./catType";
 
 export interface Cat {
   petsRequested?: number;

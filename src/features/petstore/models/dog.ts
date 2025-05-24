@@ -4,7 +4,7 @@
  * Swagger Petstore
  * OpenAPI spec version: 1.0.0
  */
-import type { Labradoodle } from './labradoodle';
-import type { Dachshund } from './dachshund';
+import type { Labradoodle } from "./labradoodle";
+import type { Dachshund } from "./dachshund";
 
 export type Dog = Labradoodle | Dachshund;
